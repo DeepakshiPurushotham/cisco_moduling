@@ -9,5 +9,6 @@ module "ec2" {
     ami_id = var.ami_id
     instanceCount = var.instanceCount ## no of instance
     vpn_range = var.vpn_range
+    bucket_name = var.bucket_name
 
 }

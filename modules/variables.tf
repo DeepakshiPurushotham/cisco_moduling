@@ -27,36 +27,17 @@ variable "ami_id" {
     type = string
   
 }
-/*variable "vpn_range" {
-    type= object({
-    blr_vpn    = list(string)
-    tokyo_vpn = list(string)
-    amsterdam_vpn = list(string)
-    sanjose_vpn = list(string)
-    hongkong_vpn = list(string)
-    rcdn_vpn = list(string)
-  })
-}
-variable "vpn_range" {
-  type = list(map(any))
-  default = [ {
-    "blr_vpn" = ["72.163.217.96/27", "72.163.220.0/27"]
-  },
-  {
-    "tokyo_vpn" = ["64.104.44.96/27"]
-  },
-  {
-    "my_vpn" =  ["49.206.10.104/32"]
-  }
-   ]
-}
-*/
+
 variable "vpn_range" {
   type = list(string)
 }
 variable "instanceCount" {
     type = number
   
+}
+
+variable "bucket_name" {
+  type = string
 }
 locals {
     common_tags = {

@@ -11,4 +11,4 @@ profile = "default"
 ami_id = "ami-017c001a88dd93847"
 instanceCount = 2
 vpn_range = [""]
-
+bucket_name = "event-tech-vm-storage-demo"

@@ -41,3 +41,6 @@ variable "instanceCount" {
 variable "vpn_range" {
   type = list(string)
 }
+variable "bucket_name" {
+  type = string
+}

@@ -23,7 +23,6 @@ resource "aws_iam_role" "vmdk-role" {
 
 resource "aws_iam_policy" "vmdk_policy" {
   name = "aws_vmdk_policy"
-  role = aws_iam_role.vmdk-role.id
   policy = "${file("role-policy.tpl")}"
 }
 
